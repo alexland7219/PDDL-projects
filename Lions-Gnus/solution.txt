@@ -1,0 +1,76 @@
+
+ff: parsing domain file
+domain 'CROSSRIVER' defined
+ ... done.
+ff: parsing problem file
+problem 'CROSSRIVER-SIMPLE' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   13 into depth [1]
+                                  12            [1][2]
+                                  11            [1]
+                                  10            [1][2][3]
+                                   9            [1]
+                                   8            [1][2][3][4][5]
+                                   7            [1][2][3][4][5][6][7][8][9][10][11]
+                                   6            [1][2][3]
+                                   5            [1]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: GET-LION-ON-BOARD L1 BARCA RIGHT
+        1: GET-LION-ON-BOARD L2 BARCA RIGHT
+        2: SAIL BARCA RIGHT LEFT
+        3: DISEMBARK-LION L1 BARCA LEFT
+        4: SAIL BARCA LEFT RIGHT
+        5: GET-LION-ON-BOARD L3 BARCA RIGHT
+        6: SAIL BARCA RIGHT LEFT
+        7: DISEMBARK-LION L2 BARCA LEFT
+        8: SAIL BARCA LEFT RIGHT
+        9: GET-GNU-ON-BOARD G1 BARCA RIGHT
+       10: DISEMBARK-LION L3 BARCA RIGHT
+       11: GET-GNU-ON-BOARD G2 BARCA RIGHT
+       12: SAIL BARCA RIGHT LEFT
+       13: DISEMBARK-GNU G1 BARCA LEFT
+       14: DISEMBARK-GNU G2 BARCA LEFT
+       15: GET-LION-ON-BOARD L2 BARCA LEFT
+       16: GET-GNU-ON-BOARD G2 BARCA LEFT
+       17: SAIL BARCA LEFT RIGHT
+       18: DISEMBARK-LION L2 BARCA RIGHT
+       19: GET-GNU-ON-BOARD G3 BARCA RIGHT
+       20: SAIL BARCA RIGHT LEFT
+       21: DISEMBARK-GNU G2 BARCA LEFT
+       22: DISEMBARK-GNU G3 BARCA LEFT
+       23: GET-LION-ON-BOARD L1 BARCA LEFT
+       24: SAIL BARCA LEFT RIGHT
+       25: GET-LION-ON-BOARD L2 BARCA RIGHT
+       26: SAIL BARCA RIGHT LEFT
+       27: DISEMBARK-LION L1 BARCA LEFT
+       28: SAIL BARCA LEFT RIGHT
+       29: GET-LION-ON-BOARD L3 BARCA RIGHT
+       30: SAIL BARCA RIGHT LEFT
+       31: DISEMBARK-LION L2 BARCA LEFT
+       32: DISEMBARK-LION L3 BARCA LEFT
+     
+
+time spent:    0.00 seconds instantiating 24 easy, 8 hard action templates
+               0.00 seconds reachability analysis, yielding 20 facts and 32 actions
+               0.00 seconds creating final representation with 20 relevant facts, 22 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 226 states, to a max depth of 11
+               0.00 seconds total time
+
