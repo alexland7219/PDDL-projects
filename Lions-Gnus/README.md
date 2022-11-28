@@ -10,3 +10,4 @@ TED Original Riddle: https://www.youtube.com/watch?v=ADR7dUoVh_c&t=49s
 if it's on that side), they'll eat the gnus.
 - In the end, all animals have to get across the river.
 
+![Image](https://i.imgur.com/wsaVYJJ.jpg)
