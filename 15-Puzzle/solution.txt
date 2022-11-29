@@ -1,0 +1,200 @@
+
+ff: parsing domain file
+domain 'FIFTEEN-PUZZLE' defined
+ ... done.
+ff: parsing problem file
+problem 'FIFTEEN-PUZZLE' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   39 into depth [1][2][3]
+                                  38            [1][2][3]
+                                  37            [1]
+                                  35            [1][2][3][4][5]
+                                  33            [1]
+                                  32            [1]
+                                  31            [1][2][3]
+                                  30            [1][2][3][4][5][6][7][8]
+                                  28            [1][2][3]
+                                  27            [1][2][3][4][5][6]
+                                  26            [1][2][3][4][5][6]
+                                  23            [1][2][3]
+                                  22            [1][2][3]
+                                  20            [1][2][3][4][5][6]
+                                  19            [1][2][3][4][5][6][7]
+                                  18            [1][2][3][4][5][6][7]
+                                  16            [1][2][3][4]
+                                  15            [1][2][3][4]
+                                  14            [1][2][3][4][5][6][7]
+                                  13            [1]
+                                  12            [1][2][3]
+                                  11            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2]
+                                   7            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22]
+                                   6            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21]
+                                   5            [1][2][3][4][5][6][7][8][9][10][11][12]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: MOVE L6 L2 P2
+        1: MOVE L7 L6 P15
+        2: MOVE L3 L7 P14
+        3: MOVE L4 L3 P10
+        4: MOVE L8 L4 P1
+        5: MOVE L7 L8 P14
+        6: MOVE L6 L7 P15
+        7: MOVE L10 L6 P3
+        8: MOVE L11 L10 P6
+        9: MOVE L7 L11 P15
+       10: MOVE L3 L7 P10
+       11: MOVE L2 L3 P2
+       12: MOVE L6 L2 P3
+       13: MOVE L7 L6 P10
+       14: MOVE L8 L7 P14
+       15: MOVE L12 L8 P12
+       16: MOVE L16 L12 P4
+       17: MOVE L15 L16 P8
+       18: MOVE L11 L15 P15
+       19: MOVE L7 L11 P14
+       20: MOVE L6 L7 P10
+       21: MOVE L10 L6 P6
+       22: MOVE L11 L10 P14
+       23: MOVE L7 L11 P10
+       24: MOVE L6 L7 P6
+       25: MOVE L2 L6 P3
+       26: MOVE L1 L2 P7
+       27: MOVE L5 L1 P5
+       28: MOVE L9 L5 P9
+       29: MOVE L13 L9 P11
+       30: MOVE L14 L13 P13
+       31: MOVE L10 L14 P14
+       32: MOVE L9 L10 P11
+       33: MOVE L5 L9 P9
+       34: MOVE L1 L5 P5
+       35: MOVE L2 L1 P7
+       36: MOVE L3 L2 P2
+       37: MOVE L7 L3 P6
+       38: MOVE L6 L7 P3
+       39: MOVE L2 L6 P2
+       40: MOVE L3 L2 P6
+       41: MOVE L7 L3 P3
+       42: MOVE L8 L7 P12
+       43: MOVE L12 L8 P4
+       44: MOVE L11 L12 P10
+       45: MOVE L7 L11 P12
+       46: MOVE L3 L7 P3
+       47: MOVE L4 L3 P1
+       48: MOVE L8 L4 P4
+       49: MOVE L12 L8 P10
+       50: MOVE L11 L12 P12
+       51: MOVE L10 L11 P11
+       52: MOVE L6 L10 P2
+       53: MOVE L2 L6 P6
+       54: MOVE L3 L2 P1
+       55: MOVE L7 L3 P3
+       56: MOVE L6 L7 P6
+       57: MOVE L5 L6 P5
+       58: MOVE L1 L5 P7
+       59: MOVE L2 L1 P1
+       60: MOVE L6 L2 P5
+       61: MOVE L7 L6 P6
+       62: MOVE L8 L7 P10
+       63: MOVE L12 L8 P12
+       64: MOVE L11 L12 P11
+       65: MOVE L7 L11 P10
+       66: MOVE L6 L7 P6
+       67: MOVE L10 L6 P2
+       68: MOVE L11 L10 P10
+       69: MOVE L7 L11 P6
+       70: MOVE L6 L7 P2
+       71: MOVE L5 L6 P7
+       72: MOVE L9 L5 P9
+       73: MOVE L10 L9 P10
+       74: MOVE L6 L10 P7
+       75: MOVE L2 L6 P5
+       76: MOVE L3 L2 P3
+       77: MOVE L7 L3 P2
+       78: MOVE L11 L7 P6
+       79: MOVE L10 L11 P7
+       80: MOVE L9 L10 P10
+       81: MOVE L5 L9 P9
+       82: MOVE L6 L5 P5
+       83: MOVE L7 L6 P6
+       84: MOVE L11 L7 P7
+       85: MOVE L12 L11 P11
+       86: MOVE L8 L12 P12
+       87: MOVE L7 L8 P7
+       88: MOVE L3 L7 P2
+       89: MOVE L2 L3 P3
+       90: MOVE L6 L2 P6
+       91: MOVE L10 L6 P10
+       92: MOVE L11 L10 P11
+       93: MOVE L7 L11 P2
+       94: MOVE L6 L7 P10
+       95: MOVE L2 L6 P6
+       96: MOVE L3 L2 P3
+       97: MOVE L7 L3 P10
+       98: MOVE L11 L7 P2
+       99: MOVE L10 L11 P11
+      100: MOVE L6 L10 P6
+      101: MOVE L7 L6 P2
+      102: MOVE L3 L7 P10
+      103: MOVE L2 L3 P3
+      104: MOVE L6 L2 P2
+      105: MOVE L10 L6 P6
+      106: MOVE L11 L10 P11
+      107: MOVE L7 L11 P10
+      108: MOVE L8 L7 P7
+      109: MOVE L12 L8 P12
+      110: MOVE L16 L12 P8
+      111: MOVE L15 L16 P15
+      112: MOVE L11 L15 P10
+      113: MOVE L12 L11 P8
+      114: MOVE L16 L12 P15
+      115: MOVE L15 L16 P10
+      116: MOVE L11 L15 P8
+      117: MOVE L10 L11 P11
+      118: MOVE L14 L10 P14
+      119: MOVE L15 L14 P8
+      120: MOVE L16 L15 P10
+      121: MOVE L12 L16 P15
+      122: MOVE L11 L12 P11
+      123: MOVE L15 L11 P10
+      124: MOVE L14 L15 P8
+      125: MOVE L10 L14 P14
+      126: MOVE L11 L10 P10
+      127: MOVE L12 L11 P11
+      128: MOVE L8 L12 P12
+      129: MOVE L7 L8 P7
+      130: MOVE L11 L7 P11
+      131: MOVE L15 L11 P8
+      132: MOVE L16 L15 P15
+      133: MOVE L12 L16 P12
+      134: MOVE L11 L12 P8
+      135: MOVE L7 L11 P11
+      136: MOVE L8 L7 P7
+      137: MOVE L12 L8 P8
+      138: MOVE L16 L12 P12
+     
+
+time spent:    0.00 seconds instantiating 0 easy, 720 hard action templates
+               0.00 seconds reachability analysis, yielding 256 facts and 720 actions
+               0.00 seconds creating final representation with 256 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.86 seconds searching, evaluating 18220 states, to a max depth of 22
+               0.86 seconds total time
+
